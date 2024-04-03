@@ -1,4 +1,4 @@
-body {
+*{
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -8,16 +8,22 @@ body {
 
 header {
     /*background-image: url('/assestes/images/img2.jpg'); */
-    background-size: cover;
+    display: flex;
+    /* background-size: cover; */
     font-family: "Anta", sans-serif;
-    background-position: center;
-    background-color: #0a0434;
-    color: #eaeff1;
-    padding: 20px;
-    text-align: center;
+    background-position: none;
+    background-color: #e6e3fa;
+    color: #010e13;
+    padding: 2px;
+    text-align: right;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    align-items: 0;
+    padding-left: 0;
+    margin-right: 0;
 }
 /* Logo styles */
-.logo {
+.logo img{
+    max-width: none;
     position: absolute;
     top: 20px;
     left: 15px;
@@ -29,30 +35,34 @@ header {
     background-color: transparent; /* Remove the background color */
 }
 
-nav {
+.nav_menu{
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    margin-top: 20px;
-}
-
-nav a {
-    margin: 0 10px;
-    color: #560505;
+    
+    align-items: right;
+    margin-top: 25px;
+    margin-right: 0px;
     text-decoration: none;
-    font-weight: bold;
-    padding-right: 15px;
 }
-li{
+.nav_menu ul{
+    display: flex;
+}
+.nav_menu li{
     list-style: none;
-    display: inline-block;
-
+    margin-right: 20px;
+}  
+.nav_menu li:last-child{
+    margin-right: 0;
 }
-li a{
-    color: rgb(189, 189, 194);
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 25px;
+
+.nav_menu a{
+    color: #08c5eb;
+    text-decoration: none;
+    font-family:  "Anta", sans-serif;
+    font-size: 1.2rem;
+    transition: all ease 0.3s;
+}
+.nav_menu a:hover{
+    color: red;
 }
 /*====*/
 main {
