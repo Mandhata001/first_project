@@ -15,12 +15,13 @@ header {
     background-color: #e6e3fa;
     color: #010e13;
     padding: 2px;
-    text-align: right;
+    text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     align-items: 0;
-    padding-left: 0;
-    margin-right: 0;
+    padding: 15px;
+    margin: 0;
 }
+
 /* Logo styles */
 .logo img{
     max-width: none;
@@ -40,11 +41,12 @@ header {
     
     align-items: right;
     margin-top: 25px;
-    margin-right: 0px;
+    margin-right: 0;
     text-decoration: none;
 }
 .nav_menu ul{
     display: flex;
+    margin-right: 0;
 }
 .nav_menu li{
     list-style: none;
@@ -67,7 +69,6 @@ header {
 /*====*/
 main {
     padding: 20px;
-    font-family: "Anta", sans-serif;
 }
 
 section {
@@ -87,7 +88,7 @@ h2 {
 }
 
 .destination img {
-    width: 100%;
+    width: 100px;
     max-width: 400px;
     height: auto;
     display: block;
