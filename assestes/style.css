@@ -5,68 +5,64 @@
     margin: 0;
     padding: 0;
 }
-header { 
+header {
     display: flex;
-    
     font-family: "Anta", sans-serif;
-    background-position: none;
     background-color: #e6e3fa;
     color: #010e13;
-    padding: 2px;
+    padding: 10px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    align-items: 0;
-    padding: 0;
-    margin: 0,0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
 }
 
-/* Logo styles */
-.logo img{
-    max-width: none;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    width: 80px; /* Adjust size as needed */
+.logo img {
+    max-width: 100%;
+    width: 100px;
     height: auto;
-    border-radius: 25%; /* Makes the logo circular */
-    box-shadow: 0 0 10px rgba(0, 11, 16, 0.5); /* Shadow effect */
-    opacity: 1; /* Adjust the opacity level (0 to 1) */
-    background-color: transparent; /* Remove the background color */
+    border-radius: 25%; /* Correct border-radius for a circle */
+    box-shadow: 0 0 10px rgba(0, 11, 16, 0.5);
+    opacity: 1;
+    background-color: transparent;
+}
+.nav_menu ul h1{
+    flex-grow: 1;
+    text-align: center;
+}
+.nav_menu {
+    display: flex;
+    align-items: center; /* Align items vertically */
+
 }
 
-.nav_menu{
+.nav_menu ul {
     display: flex;
-    
-    align-items: left;
-    margin-top: 25px;
-    margin-left: 0;
-    text-decoration: none;
+    margin: 0; /* Remove unnecessary margin */
+    padding: 0;
 }
-.nav_menu ul{
-    display: flex;
-    margin: 0,0;
-    width: 50%;
-    justify-content: center;
-}
-.nav_menu li{
-    list-style: none;
+
+.nav_menu li {
     margin-right: 20px;
-}  
-.nav_menu li:last-child{
-    margin-right: auto;
 }
 
-.nav_menu a{
-    height: 100%;
+.nav_menu li:last-child {
+    margin-right: 0; /* Align the last item to the right */
+}
+
+.nav_menu a {
     color: #0f044f;
     text-decoration: none;
-    font-family:  "Anta", sans-serif;
+    font-family: "Anta", sans-serif;
     font-size: 1.2rem;
-    transition: all ease 0.3s;
+    transition: color ease 0.3s; /* Simplify transition */
 }
-.nav_menu a:hover{
+
+.nav_menu a:hover {
     color: red;
 }
+
 .sidebar{
     position: fixed;
     top: 0;
