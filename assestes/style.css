@@ -5,11 +5,9 @@
     margin: 0;
     padding: 0;
 }
-
-header {
-    /*background-image: url('/assestes/images/img2.jpg'); */
+header { 
     display: flex;
-    /* background-size: cover; */
+    
     font-family: "Anta", sans-serif;
     background-position: none;
     background-color: #e6e3fa;
@@ -18,8 +16,8 @@ header {
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     align-items: 0;
-    padding: 15px;
-    margin: 0;
+    padding: 0;
+    margin: 0,0;
 }
 
 /* Logo styles */
@@ -39,25 +37,28 @@ header {
 .nav_menu{
     display: flex;
     
-    align-items: right;
+    align-items: left;
     margin-top: 25px;
-    margin-right: 0;
+    margin-left: 0;
     text-decoration: none;
 }
 .nav_menu ul{
     display: flex;
-    margin-right: 0;
+    margin: 0,0;
+    width: 50%;
+    justify-content: center;
 }
 .nav_menu li{
     list-style: none;
     margin-right: 20px;
 }  
 .nav_menu li:last-child{
-    margin-right: 0;
+    margin-right: auto;
 }
 
 .nav_menu a{
-    color: #08c5eb;
+    height: 100%;
+    color: #0f044f;
     text-decoration: none;
     font-family:  "Anta", sans-serif;
     font-size: 1.2rem;
@@ -65,6 +66,43 @@ header {
 }
 .nav_menu a:hover{
     color: red;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100px;
+}
+.sidebar a{
+    width: 100px;
+}
+.menu-button{
+    display:none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display:block;
+    }
+}
+@media (max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
 }
 /*====*/
 main {
@@ -174,7 +212,7 @@ button:hover {
         margin: 5px 0;
     }
     .destination img {
-        max-width: 100%;
+        max-width: 100px;
         margin-right: 0;
     }
 }

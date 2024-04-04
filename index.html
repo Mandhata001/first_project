@@ -20,17 +20,37 @@
 <body>
                     <!--=======HEADER SECTION=====-->
     <header>
+        <nav class="nav_menu">
         <div class="logo">
         <a href="#"><img src="/assestes/images/logo2.png" alt="Logo_VillageVistaIndia"></a>
         </div>
-        <h1>Welcome to VillageVistaIndia</h1>
-        <nav class="nav_menu"><ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="/contactus.html">Contact Us</a></li>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">AboutUs</a></li>
+                <li><a href="/contactus.html">ContactUs</a></li>
+            </ul>
+            <ul>
+                <li><h1>VillageVistaIndia</h1></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#destinations">Destinations</a></li>
+                <li class="hideOnMobile"><a href="#about">AboutUs</a></li>
+                <li class="hideOnMobile"><a href="/contactus.html">ContactUs</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
             </ul>
         </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
     </header>
     <main>
         <section id="destinations">
