@@ -27,6 +27,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Destinations</a></li>
                 <li><a href="#">AboutUs</a></li>
+                <li><a href="/tripplan.html">TripPlanner</a></li>
                 <li><a href="/contactus.html">ContactUs</a></li>
             </ul>
             <ul>
@@ -50,10 +51,189 @@
             }
         </script>
     </header>
-    
-    
-<!--Footer Section-->
+    <main>
+        
+        <section class="hero">
+          <div class="hero-images">
+              <img src="/assestes/images/vill.jpg" alt="Hero image 1" class="active" />
+              <img src="/assestes/images/village1.jpg" alt="Hero image 2" />
+              <img src="/assestes/images/village3.jpg" alt="Hero image 3" />
+              <!-- Add more images as needed -->
+          </div>
+          <div class="hero-content">
+              <h1>Welcome to VillageVistaIndia</h1>
+              <p>Discover amazing destinations and book your next trip with us.</p>
+              <a href="#" class="hero-button">Book Now</a>
+          </div>
+      </section>
+      
+        <!-- Destinations -->
+        <section id="destinations" class="destinations">
+          <h2>Popular Destinations</h2>
+          <div class="destination-grid">
+            <div class="destination-item">
+              <img src="/assestes/images/village2.jpg" alt="" />
+              <h3>Palampur</h3>
+              <p>
+                Visit the village that never sleeps and discover its iconic
+                landmarks, world-class museums, and diverse neighborhoods.
+              </p>
+            </div>
+            <div class="destination-item">
+              <img src="/assestes/images/island1.jpg" alt="" />
+              <h3>Paris</h3>
+              <p>
+                Experience the romance and culture of the City of Lights, from the
+                Eiffel Tower to the Louvre Museum.
+              </p>
+            </div>
+            <div class="destination-item">
+              <img src="/assestes/images/village3.jpg" alt="" />
+              <h3>Tokyo</h3>
+              <p>
+                Explore the vibrant city of Tokyo and immerse yourself in its
+                unique blend of ancient traditions and modern technology.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="hotels" class="destinations">
+          <h2>Featured Hotels</h2>
+          <div class="destination-grid">
+            <div class="destination-item">
+              <img src="/assestes/images/vara4.jpg" alt="" />
+              <h3>The Ritz Carlton</h3>
+              <p>
+                Experience luxury accommodations and impeccable service at The
+                Ritz Carlton, located in the heart of the city.
+              </p>
+            </div>
+            <div class="destination-item">
+              <img src="/assestes/images/vara.jpg" alt="" />
+              <h3>The Four Seasons</h3>
+              <p>
+                Relax in style at The Four Seasons, featuring breathtaking views,
+                an award-winning spa, and gourmet dining options.
+              </p>
+            </div>
+            <div class="destination-item">
+              <img src="/assestes/images/img4.jpg" alt="" />
+              <h3>The Waldorf Astoria</h3>
+              <p>
+                Indulge in luxury at The Waldorf Astoria, a historic landmark
+                hotel renowned for its elegance and sophistication.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="activites" class="destinations">
+          <h2>Featured Activities</h2>
+          <div class="destination-grid">
+            <div class="destination-item">
+              <img src="/assestes/images/img4.jpg" alt="" />
+              <h3>The Ritz Carlton</h3>
+              <p>
+                Experience luxury accommodations and impeccable service at The
+                Ritz Carlton, located in the heart of the city.
+              </p>
+            </div>
+            <div class="destination-item">
+              <img src="/assestes/images/img4.jpg" alt="" />
+              <h3>The Four Seasons</h3>
+              <p>
+                Relax in style at The Four Seasons, featuring breathtaking views,
+                an award-winning spa, and gourmet dining options.
+              </p>
+            </div>
+            <div class="destination-item">
+              <img src="/assestes/images/img4.jpg" alt="" />
+              <h3>The Waldorf Astoria</h3>
+              <p>
+                Indulge in luxury at The Waldorf Astoria, a historic landmark
+                hotel renowned for its elegance and sophistication.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section id="about" class="about">
+          <h3>About Us</h3>
+          <p>
+            Our company is dedicated to providing the best travel experiences to
+            our customers. We specialize in creating custom itineraries that cater
+            to each individual's interests and preferences.
+          </p>
+          <div class="team-members">
+            <div class="team-member">
+              <img src="/assestes/images/review2.jpg" alt="" />
+              <h4>John Smith</h4>
+              <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+              <img src="/assestes/images/review1.jpg" alt="" />
+              <h4>Jane Doe</h4>
+              <p>Head of Operations</p>
+            </div>
+            <div class="team-member">
+              <img src="/assestes/images/review4.jpg" alt="" />
+              <h4>David Lee</h4>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+        </section>
+        
+        
+      </main>
+
+
+    <!--<h1>Trip Planner</h1>
+    <label for="userInput">Enter your preferences:</label>
+    <input type="text" id="userInput" name="userInput">
+    <button onclick="analyzeUserInput()">Submit</button>
+    <div id="output"></div>
+
+    <script>
+        function analyzeUserInput() {
+            var userInput = document.getElementById('userInput').value;
+            $.ajax({
+                url: '/analyze_user_input',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ userInput: userInput }),
+                success: function(response) {
+                    // Display response on the webpage
+                    document.getElementById('output').innerText = 'Keywords: ' + response.keywords + ', Distance: ' + response.distance;
+                }
+            });
+        }
+    </script>-->
+    <script>
+      let index = 0;
+      const images = document.querySelectorAll('.hero-images img');
+  
+      function changeImage() {
+          images.forEach(img => img.classList.remove('active'));
+          images[index].classList.add('active');
+          index = (index + 1) % images.length;
+          setTimeout(changeImage, 5000); // Change image every 5 seconds (5000 milliseconds)
+      }
+  
+      changeImage(); // Start the slideshow
+    </script>
+  
+                            <!--=======FOOTER SECTION=====-->
     <footer class="footer_section">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         <p>Email: mandhatapathak@gmai.com | Phone: +91-4560-7890</p>
         <p>&copy; <span id="displayYear"></span>  2024 VillageVistaIndia</p>
     </footer>
