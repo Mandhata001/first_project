@@ -1,6 +1,6 @@
 # Village Tourism Website Demo Project
 
-![Homepage](images/homestays2jpg)
+![Homepage](assestes/images/Homepage.png)
 
 ## Introduction
 Welcome to our demo project showcasing the vibrant tapestry of village tourism and culture. Explore the essence of rural life, cultural heritage, and local traditions in this immersive journey through picturesque villages and cultural landmarks.
@@ -13,23 +13,16 @@ Welcome to our demo project showcasing the vibrant tapestry of village tourism a
 ## Screenshots
 
 ### Popular Destinations
-![Palampur](images/palampur.jpg)
-![Ayirur](images/ayirur.jpg)
-![Pragpur](images/pragpur.jpg)
+![Screenshot](assets/images/destination.png)
 
 ### Featured Homestays
-![Ganga Retreat Homestay](images/ganga_retreat_homestay.jpg)
-![Village Vista Homestay](images/village_vista_homestay.jpg)
-![Palampur Homestay](images/palampur_homestay.jpg)
-
+![Screenshot](assets/images/homestays.png)
 ### Cultural Corner
-![Embroidery Workshop](images/embroidery_workshop.jpg)
-![Pottery Making](images/pottery_making.jpg)
-![Bamboo Dance Performance](images/bamboo_dance_performance.jpg)
+![Screenshot](assets/images/culturalc.png)
 
 ## About Us
 Learn more about our team and the inspiration behind this project.
-![About Us](images/about_us.jpg)
+![About Us](assets/images/aboutus.png)
 
 ## Usage
 1. Clone the repository.
@@ -38,8 +31,9 @@ Learn more about our team and the inspiration behind this project.
 
 ## Contributors
 - John Doe
-- Mandhata Pathak
-- [Add 
+- Mandhata pathak
+- David Lee
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
