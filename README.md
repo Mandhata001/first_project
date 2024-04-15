@@ -1,6 +1,6 @@
 # Village Tourism Website Demo Project
 
-![Homepage](assets/images/homepage.png)
+![Homepage](assestes/images/Homepage.png)
 
 ## Introduction
 Welcome to our demo project showcasing the vibrant tapestry of village tourism and culture. Explore the essence of rural life, cultural heritage, and local traditions in this immersive journey through picturesque villages and cultural landmarks.
