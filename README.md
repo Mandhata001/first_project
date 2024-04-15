@@ -13,19 +13,12 @@ Welcome to our demo project showcasing the vibrant tapestry of village tourism a
 ## Screenshots
 
 ### Popular Destinations
-![Palampur](assets/images/destination.png)
-![Ayirur](assets/images/destination.png)
-![Pragpur](assets/images/destination.png)
+![Screenshot](assets/images/destination.png)
 
 ### Featured Homestays
-![Ganga Retreat Homestay](assets/images/homestays.png)
-![Village Vista Homestay](assets/images/homestays.png)
-![Palampur Homestay](assets/images/homestays.png)
-
+![Screenshot](assets/images/homestays.png)
 ### Cultural Corner
-![Embroidery Workshop](assets/images/culturalc.png)
-![Pottery Making](assets/images/culturalc.png)
-![Bamboo Dance Performance](assets/images/culturalc.png)
+![Screenshot](assets/images/culturalc.png)
 
 ## About Us
 Learn more about our team and the inspiration behind this project.
@@ -38,8 +31,8 @@ Learn more about our team and the inspiration behind this project.
 
 ## Contributors
 - John Doe
-- Jane Smith
-- [Add your name here if you contribute]
+- Mandhata pathak
+- David Lee
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
