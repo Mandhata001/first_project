@@ -13,16 +13,16 @@ Welcome to our demo project showcasing the vibrant tapestry of village tourism a
 ## Screenshots
 
 ### Popular Destinations
-![Screenshot](assets/images/destination.png)
+![Screenshot](assestes/images/Destination.png)
 
 ### Featured Homestays
-![Screenshot](assets/images/homestays.png)
+![Screenshot](assestes/images/Homestays.png)
 ### Cultural Corner
-![Screenshot](assets/images/culturalc.png)
+![Screenshot](assestes/images/CulturalC.png)
 
 ## About Us
 Learn more about our team and the inspiration behind this project.
-![About Us](assets/images/aboutus.png)
+![About Us](assestes/images/aboutus.png)
 
 ## Usage
 1. Clone the repository.
